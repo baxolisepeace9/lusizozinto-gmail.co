@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fa;
+  color: #243447;
+  line-height: 1.6;
+}
+
+header {
+  background: #173b57;
+  color: white;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.welcome,
+.framework {
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+button {
+  background: #176b87;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #104e64;
+}
+
+button:focus-visible {
+  outline: 3px solid #e3a72f;
+  outline-offset: 3px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.privacy-note {
+  font-size: 14px;
+  color: #46596b;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 22px 14px;
+  }
+
+  .welcome,
+  .framework {
+    padding: 18px;
+  }
+}
+
+/*Questions and Results*/
+.assessment,
+.results {
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+fieldset {
+  border: 1px solid #d5dee8;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+fieldset label {
+  display: block;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+fieldset input {
+  margin-right: 8px;
+  accent-color: #176b87;
+}
+
+.secondary-button {
+  background: #526779;
+  margin-left: 8px;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #176b87;
+}
+
+.results li {
+  margin-bottom: 12px;
+}
+
+button {
+  margin-top: 8px;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #e3a72f;
+  outline-offset: 3px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .assessment,
+  .results {
+    padding: 16px;
+  }
+
+  .secondary-button {
+    margin-left: 0;
+  }
+}
+
+/*Awareness Guide Styling*/
+
+.awareness {
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+.awareness-card {
+  background: #f3f6fa;
+  border-left: 4px solid #176b87;
+  padding: 16px;
+  margin: 18px 0;
+  border-radius: 6px;
+}
+
+.awareness-card h3 {
+  margin-top: 0;
+  color: #173b57;
+}
+
+.awareness-card li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .awareness {
+    padding: 16px;
+  }
+
+  .awareness-card {
+    padding: 12px;
+  }
+}
+/*Improved Assessment Results*/
+/* Improved assessment results */
+.score-card {
+  background: #eaf4f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.score-card > p:first-child {
+  margin-bottom: 5px;
+}
+
+#scoreLevel {
+  color: #173b57;
+}
+
+.checklist-card {
+  background: #f3f6fa;
+  padding: 20px;
+  margin: 24px 0;
+  border-radius: 10px;
+}
+
+#checklistProgress {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#progressBar {
+  width: 100%;
+  height: 18px;
+  accent-color: #176b87;
+  margin-bottom: 15px;
+}
+
+.action-checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.action-checklist li {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.action-checklist label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.action-checklist input[type="checkbox"] {
+  margin-top: 5px;
+  flex-shrink: 0;
+  accent-color: #176b87;
+}
+
+.action-checklist input:checked + span {
+  text-decoration: line-through;
+  color: #526779;
+}
+
+@media (max-width: 600px) {
+  .score-card,
+  .checklist-card {
+    padding: 14px;
+  }
+}
